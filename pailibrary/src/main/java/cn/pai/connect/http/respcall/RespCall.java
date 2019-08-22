@@ -71,9 +71,9 @@ public abstract class RespCall<T> implements Callback {
 
     @Override
     public void onFailure(Call call, IOException e) {
-        Loger.d("请求失败:" + e.getMessage());
+        Loger.d("请求失败:" + e);
         Loger.d("---------------okhttp end---------------------");
-        deliverFailure(null, "网络异常(" + e.getMessage() + ")");
+        deliverFailure(null, "网络异常(" + e + ")");
     }
 
     /**
