@@ -9,5 +9,7 @@ import okhttp3.OkHttpClient;
  */
 public interface OkHttpFactory {
 
+	int DEFAULT_TIMEOUT = 15000; // 默认的超时时间
+
 	OkHttpClient create();
 }
